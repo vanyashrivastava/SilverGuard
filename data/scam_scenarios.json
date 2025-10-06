@@ -1,0 +1,72 @@
+{
+  "scenarios": [
+    {
+      "id": 1,
+      "type": "phone",
+      "caller": "Unknown Number",
+      "message": "Hello, this is the Social Security Administration. Your social security number has been suspended due to suspicious activity. Press 1 to speak with an agent immediately to avoid arrest.",
+      "is_scam": true,
+      "explanation": "🚨 SCAM! Real SSA never calls about suspended numbers. They use threats and urgency to pressure you."
+    },
+    {
+      "id": 2,
+      "type": "email",
+      "sender": "support@banksecurity.com",
+      "subject": "URGENT: Verify Your Account",
+      "message": "Dear Customer, We detected unusual activity on your account. Click here to verify your identity within 24 hours or your account will be permanently closed. Thank you, Bank Security Team",
+      "is_scam": true,
+      "explanation": "🚨 SCAM! Phishing email with fake urgency. Real banks don't ask you to verify via email links."
+    },
+    {
+      "id": 3,
+      "type": "phone",
+      "caller": "Medicare Services",
+      "message": "Hello, this is calling about your Medicare benefits. You're eligible for a free back brace. We just need to confirm your Medicare number to send it to you.",
+      "is_scam": true,
+      "explanation": "🚨 SCAM! Medicare equipment scam. They want your Medicare number to bill fake services."
+    },
+    {
+      "id": 4,
+      "type": "email",
+      "sender": "grandson.mike@email.com",
+      "subject": "Emergency - Need Help!",
+      "message": "Hi Grandma, I'm in trouble. I was in an accident while traveling and I'm in jail. I need $5,000 for bail. Please don't tell Mom and Dad, they'll be so mad. Can you wire the money? I'll pay you back next week.",
+      "is_scam": true,
+      "explanation": "🚨 SCAM! Grandparent scam. Creates fake emergency and asks for secrecy and wire transfer."
+    },
+    {
+      "id": 5,
+      "type": "phone",
+      "caller": "Dr. Johnson's Office",
+      "message": "Hi, this is Sarah from Dr. Johnson's office calling to confirm your appointment tomorrow at 2pm. Please call us back at this number if you need to reschedule.",
+      "is_scam": false,
+      "explanation": "✅ LEGITIMATE. Normal appointment reminder with no requests for money or personal information."
+    },
+    {
+      "id": 6,
+      "type": "email",
+      "sender": "utility.company@powerco.com",
+      "subject": "Monthly Bill Statement",
+      "message": "Your monthly electric bill is ready. Amount due: $127.45. Due date: October 15, 2025. You can pay online at www.powerco.com or mail a check to the address on your bill. Thank you for being a valued customer.",
+      "is_scam": false,
+      "explanation": "✅ LEGITIMATE. Normal bill notification with no urgent action or suspicious requests."
+    },
+    {
+      "id": 7,
+      "type": "phone",
+      "caller": "Amazon Customer Service",
+      "message": "This is Amazon. We noticed a suspicious $800 charge on your account for an iPhone. If you did not make this purchase, press 1 to speak with our fraud department immediately.",
+      "is_scam": true,
+      "explanation": "🚨 SCAM! Amazon never calls about fraudulent charges. Scammers create fake urgency about unauthorized purchases."
+    },
+    {
+      "id": 8,
+      "type": "email",
+      "sender": "notifications@local-library.org",
+      "subject": "Book Hold Ready for Pickup",
+      "message": "Good news! The book you requested, 'The Thursday Murder Club', is now available for pickup at the Main Branch. Your hold will be kept for 7 days. Library hours: Mon-Sat 9am-6pm.",
+      "is_scam": false,
+      "explanation": "✅ LEGITIMATE. Standard library notification with no requests for money or personal data."
+    }
+  ]
+}
