@@ -13,7 +13,7 @@ def main():
         game = ScamDetectiveGame()
         game.play()
     except KeyboardInterrupt:
-        print("\n\nGame interrupted. Thanks for playing!")
+        print("\n\nGame interrupted. Thanks!")
     except Exception as e:
         print(f"\nAn error occurred: {e}")
 
