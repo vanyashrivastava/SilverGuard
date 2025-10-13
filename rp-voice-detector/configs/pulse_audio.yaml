@@ -1,0 +1,25 @@
+microphone:
+  device: "default"
+  sample_rate: 16000
+  channels: 1
+  format: "S16_LE"
+  buffer_size: 1024
+
+speaker:
+  device: "default"
+  sample_rate: 16000
+  channels: 1
+  format: "S16_LE"
+  volume: 75
+
+audio_processing:
+  noise_reduction: true
+  normalization: true
+  silence_removal: true
+  vad_enabled: true
+
+logging:
+  level: "INFO"
+  file: "/var/log/rp-voice-detector/audio.log"
+  max_size: "10MB"
+  backup_count: 5

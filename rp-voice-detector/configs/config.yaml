@@ -1,0 +1,33 @@
+audio_config:
+  microphone:
+    device: "default"
+    sample_rate: 16000
+    channels: 1
+    format: "int16"
+    buffer_size: 1024
+  speaker:
+    device: "default"
+    volume: 75
+
+model_config:
+  model_path: "/path/to/model"
+  wake_word: "hey raspberry"
+  confidence_threshold: 0.7
+  preprocessing:
+    noise_reduction: true
+    silence_removal: true
+
+system_config:
+  logging:
+    level: "INFO"
+    log_file: "/var/log/rp-voice-detector.log"
+  gpio:
+    pin_mapping:
+      led: 17
+      button: 27
+  state_management:
+    max_retries: 5
+    retry_delay: 2
+  error_handling:
+    notify_admin: true
+    log_errors: true

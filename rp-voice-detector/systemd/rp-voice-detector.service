@@ -1,0 +1,14 @@
+[Unit]
+Description=Raspberry Pi Voice Detector Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/rp-voice-detector/src/main.py
+WorkingDirectory=/path/to/rp-voice-detector
+StandardOutput=journal
+StandardError=journal
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

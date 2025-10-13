@@ -1,0 +1,10 @@
+model_path: "models/voice_detection_model.pb"
+input_shape: [1, 16000]  # Example input shape for the model
+output_classes: 10  # Number of output classes for the detection
+confidence_threshold: 0.5  # Minimum confidence for a detection to be considered valid
+language: "en"  # Language for the voice detection model
+sample_rate: 16000  # Sample rate for audio input
+preprocessing:
+  normalize: true  # Normalize audio input
+  trim_silence: true  # Trim silence from audio input
+  vad_enabled: true  # Enable voice activity detection before processing
